@@ -26,9 +26,9 @@ suite('Functional Tests', function() {
         if(err) return console.error(err);
         assert.equal(res.status, 200);
         assert.isArray(res.body, 'response should be an array');
-        /*assert.property(res.body[0], 'commentcount', 'Books in array should contain commentcount');
+        assert.property(res.body[0], 'commentcount', 'Books in array should contain commentcount');
         assert.property(res.body[0], 'title', 'Books in array should contain title');
-        assert.property(res.body[0], '_id', 'Books in array should contain _id');*/
+        assert.property(res.body[0], '_id', 'Books in array should contain _id');
         done();
       });
   });
